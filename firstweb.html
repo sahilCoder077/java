@@ -1,27 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="responsive" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="C:\Users\sahil\OneDrive\Desktop\webtech\style\mystyle.css" />
-  <title>webtech</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Browser</title>
+   <meta name="author" content="john Doe"/>
+   <meta name="title" content="A title search"/>
+   <meta name="description" content="ok"/>
+   <meta name="keyword" content="htmal">
+   <style>
+           #form-border{
+                
+                   height:660px;
+                   width:510px;
+                   border-style:solid;
+                   border-color: black;
+                   border-width: 5px;
+                   background-color:brown;
+                   border-color: blueviolet;             
+           }
+
+           h2{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+                color:bisque;
+           }
+
+           label{
+
+                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                 font-size:20px;
+                 color:orange;
+
+           }
+
+           button{
+
+                 color:brown;
+                 background-color: aqua;
+                 height:30px;
+                 width:80px;
+                 text-align: center;
+                 margin-top:5%;
+                 margin-bottom:5%;
+                 margin-left:40%;
+
+           }
+
+   </style>
+   
 </head>
+<body >
 
-<body>
-<div id="para">
-  <h1 align="center">Templates</h1>
-  <p><b>A template is a simple yet very powerful tool in C++. The simple idea is to pass the data type as a parameter so that we dont need to write the same code for different data types. For example, a software company may need to sort() for different data types. Rather than writing and maintaining multiple codes, we can write one sort() and pass the datatype as a parameter. 
-   C++ adds two new keywords to support templates: template and type name. The second keyword can always be replaced by the keyword class.
-   How Do Templates Work?</b>
-   Templates are expanded at compiler time. This is like macros. The difference is, that the compiler does type-checking before template expansion. The idea is simple, source code contains only function/class, but compiled code may contain multiple copies of the same function/class. 
-  </p>
-</div>
+    <div  id="form-border">
+         
+         <form action="GET" method="">     
+                <h2 align="center">Student Registeration Form</h2>
+            <label name=" Student Name">Student Name:</label>
+            <input type="text" placeholder="Full Name"/><br><br>
+            <label name="Father name">Father Name:</label>
+            <input type="text" placeholder="Father name"/><br><br>
+            <label name="Mother name">Mother  Name:</label>
+            <input type="text" placeholder="Mother name"/><br><br>
+            <label name="Gender">Gender:</label>
+            <label name="male">Male</label>
+            <input type="Radio" name="gender" vlaue="male" id="male">
+            <label name="Female">Female</label>
+            <input type="Radio" name="gender" value="Female" id="Female"><br><br>
+            <label>Date:</label>
+            <input type="datetime-local" name="date" id="datex"><br><br>
+            <label name="email">email</label>
+            <input type="text" placeholder="Email"><br><br>
+            <label primary education:>primary education:</label>
+            <select id="sample">
+              <option value="SCC">SCC</option>
+              <option value="HSC">HSC</option>
+            </select><br><br>
+            <br>
+            <label name="Higher Eduction"> Higher Education</label>
+            <select id="sample2">
+                   
+                <option value="Arts BA">Arts BA</option>
+                <option value="B.com">B.com</option>
+                <option value="B.SC">B.SC</option>
+                <option value="Diploma">Diploma</option>
+                <option value="IT">IT</option>
+                <option value="Electornics Engineering">Electornics Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Computer Science engineering">Computer Science engineering</option>
+                <option value="other">other</option>
+            </select>
+         </form>
+         <br>
 
-  <div>
-   <a href="https://www.geeksforgeeks.org/templates-cpp/">www.geeksforgeeks</a>
-  </div>
-  
-
+          <label name="Course">Course Selection:</label>
+           <select>
+                 <option value="Web Technology" >Web Tech</option>
+                 <option vale="Artifical Inteligance">Artifical Inteligance</option>
+                 <option value="Mashine Learing">Mashine Learning</option>
+                 <option value="Software Engineer">Software Engineer</option>
+           </select>
+            <br><br>
+             <label name="text">Telephone number</label>
+             <input type="text" placeholder="phone Number"><br>
+             <button type="button">SUBMIT</button>
+    </div>
 </body>
+
 </html>
